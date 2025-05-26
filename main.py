@@ -1,6 +1,3 @@
-# this allows us to use code from
-# the open-source pygame library
-# throughout this file
 import pygame
 from constants import *
 
@@ -16,7 +13,7 @@ def main():
             if event.type == pygame.QUIT:
                 return
 
-        pygame.Surface.fill(screen, (255, 255, 255))
+        screen.fill("black")
         pygame.display.flip()
 
 if __name__ == "__main__":
