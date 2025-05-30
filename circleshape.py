@@ -22,5 +22,5 @@ class CircleShape(pygame.sprite.Sprite):
         pass
 
     def collision(self, the_asteroid):
-        distance = pygame.math.Vector2.distance_to(self.position, the_asteroid.position)
-        return distance <= (self.radius + the_asteroid.radius)
+#        distance = pygame.math.Vector2.distance_to(self.position, the_asteroid.position)
+        return self.position.distance_to(the_asteroid.position) <= (self.radius + the_asteroid.radius)
